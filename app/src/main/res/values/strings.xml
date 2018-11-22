@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">UPTD Jabar 2</string>
+    <string name="site">http://jmasagi.com</string>
+
+    <!-- Util -->
+    <string name="contentDescription"> </string>
+
+    <!-- Menu Item -->
+    <string name="nav_home">Beranda</string>
+    <string name="nav_company">Perusahaan</string>
+    <string name="nav_inspections">Pemeriksaan</string>
+    <string name="nav_inspectors">Pengawas</string>
+    <string name="nav_account">Akun</string>
+    
+    <!-- Card Inspectors -->
+    <string name="ci_nama">Nama Pengawas</string>
+    <string name="ci_jabatan">Jabatan</string>
+
+</resources>

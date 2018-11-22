@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+                name="model"
+                type="com.jmasagi.uptdjabar2.modules.inspectors.InspectorsViewModel"/>
+    </data>
+
+    <android.support.v7.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <ImageView
+                    android:id="@+id/profile_pic"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@color/backgroundApp"
+                    android:contentDescription="@string/contentDescription"
+                    android:padding="10dp"/>
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                <TextView
+                        android:id="@+id/nama_pengawas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@{model.nama}"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:text="@string/ci_nama"/>
+
+                <TextView
+                        android:id="@+id/jabatan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@{model.jabatan}"
+                        tools:text="@string/ci_jabatan"/>
+
+            </LinearLayout>
+
+            <ImageView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/green"
+                    android:contentDescription="@string/contentDescription"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_check"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</layout>
